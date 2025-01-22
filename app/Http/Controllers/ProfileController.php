@@ -14,6 +14,8 @@ class ProfileController extends Controller
     /**
      * Display the user's profile form.
      */
+
+    protected $table = 'user'
     public function edit(Request $request): View
     {
         return view('profile.edit', [
