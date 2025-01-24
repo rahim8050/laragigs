@@ -19,6 +19,11 @@ class listing
                 'title'=>'listing two',
                 'description'=>'lorem ipsum idios ipsium'
     
+            ],
+                [
+                    'id'=>3,
+                    'title'=>'listing three',
+                    'description'=>'lorem ipsum idios ipsium'
                 ]
             ];
     }
