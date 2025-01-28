@@ -1,3 +1,5 @@
+@extends('layout')
+@section('content')
 <h1><?php  echo $heading ?></h1>
 @unless (count($listings)==0)
 <p>no listings found </p>   
@@ -12,3 +14,4 @@
  @else
  <p>no listing found</p>
   @endunless
+@endsection
