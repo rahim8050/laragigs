@@ -1,13 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Models\listing;
+use App\Models\Listing;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('listings',[
         'heading' => 'latest listings',
-        'listings' => listing::all()
+        'listings' => Listing::all()
     ]);
 });
 Route::get('/listings/{$id}',function($id){
