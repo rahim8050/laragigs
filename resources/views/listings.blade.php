@@ -9,9 +9,7 @@
 
 
  @foreach ($listings as $listing)
- 
-<x-listing-card :listing="$listing" />
-    
+<x-list :listing = "$listing" />
  @endforeach 
  @else
  <p>no listing found</p>
