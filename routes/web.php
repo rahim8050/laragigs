@@ -12,7 +12,7 @@ Route::get('/', function () {
 });
 Route::get('/listings/{$id}',function($id){
     return view ('listing',[
-        'listing'=>listing::find($id)
+        'listings'=>listing::find($id)
     ]);
 });
 
