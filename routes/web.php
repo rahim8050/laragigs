@@ -1,6 +1,6 @@
 <?php
 
-use index;
+
 use App\Models\Listing;
 use Termwind\Components\Li;
 use Illuminate\Support\Facades\Route;
