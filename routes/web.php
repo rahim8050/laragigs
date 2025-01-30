@@ -1,21 +1,17 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use index;
 use App\Models\Listing;
+use Termwind\Components\Li;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ListingController;
+use App\Http\Controllers\ProfileController;
 
-Route::get('/', function () {
-    return view('listings', [
-        'listings' => Listing::all()
-    ]);
-});
+Route::get('/', [ListingController::class, 'index']);
+    
+Route::get('/listings/{$Listing}', [ListingController::class, 'show']);
 
-Route::get('/listings/{$id}', function (Listing 
-$listing) {
-    return view('listing', [
-        'listing' => $listing
-    ]);
-});
+
 
 
 
