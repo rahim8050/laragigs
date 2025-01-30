@@ -9,11 +9,13 @@
 
 
  @foreach ($listings as $listing)
-{{-- <x-listed :listing = "$listing" /> --}}
+
 @include('Lists.listed')
+
  @endforeach 
  @else
  <p>no listing found</p>
   @endunless
 </div>
+<x-card/>
 @endsection
