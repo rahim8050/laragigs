@@ -9,7 +9,7 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/', [ListingController::class, 'index']);
     
-Route::get('/listings/{$Listing}', [ListingController::class, 'show']);
+Route::get('/listings/{Listing}', [ListingController::class, 'show']);
 
 
 
